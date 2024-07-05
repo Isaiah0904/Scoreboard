@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <h2 id="score-card">0</h2>
+                <button onclick="addOneHome()">+1</button>
+                <button  onclick="addTwoHome()">+2</button>
+                <button  onclick="addThreeHome()">+3</button>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <h2 id="score-card-2">0</h2>
+                <button  onclick="addOneGuest()">+1</button>
+                <button  onclick="addTwoGuest()">+2</button>
+                <button  onclick="addThreeGuest()">+3</button>
+            </div>
+        </div>
+        <div class="fouls">
+            <h4>FOULS</h4>
+        </div>
+        <div class="foul-container">
+            <div>
+                <h4>HOME</h4>
+                <h5 id="foul-score-1">0</h5>
+                <button onclick="homeFoul()">HOME FOUL</button>
+            </div>
+            <div>
+                <h4>GUEST</h4>
+                <h5 id="foul-score-2">0</h5>
+                 <button onclick="guestFoul()">GUEST FOUL</button>
+            </div>
+        </div>
+        <div class="reset-container">
+            <button id ="reset" onclick="reset()">NEW GAME</button>
+            <button onclick="leaderMessage()">END GAME</button>
+        </div>
+        <div class="reset-container">
+            <p id="leader-result"></p>
+            <p id="foul-result"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
